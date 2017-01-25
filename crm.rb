@@ -8,10 +8,11 @@ Contact.create('Betty', 'Maker', 'betty@bitmakerlabs.com', 'Developer')
 
 get '/' do
   @num_of_contacts = Contact.all.length
-  erb :index
+  erb :contacts
 end
 
 get '/contacts' do
+  @num_of_contacts = Contact.all.length
   erb :contacts
 end
 
@@ -19,12 +20,20 @@ get '/about' do
   erb :about
 end
 
-post '/contacts' do
-  Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
-  redirect to('/')
+get '/contacts/new' do
+  erb :new_contacts
 end
 
-get '/contacts/1' do
-  @contact = Contact.find(1)
-  erb :show_contact
+post '/contacts' do
+  Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
+  redirect to('/contacts')
+end
+
+get '/contacts/:id' do
+  @contact = Contact.find(params[:id].to_i)
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
 end

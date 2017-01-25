@@ -1,19 +1,13 @@
-<div>
-  <h2 class="contacts_h2">Create new Contact</h1>
-
-  <form class="contacts_form" action='/contacts' method='post'>
-    <label for="first_name">First Name: </label>
-    <input type='text' id="first_name" name='first_name'>
-    <label for="last_name">Last Name: </label>
-    <input type='text' id="last_name" name='last_name'>
-    <label for="email">Email: </label>
-    <input type='email' id="email" name='email'>
-    <label for="note">Note: </label>
-    <input type='text' id="note" name='note'>
-    <input type='submit' value='Add a contact'>
-  </form>
+<div class="index_div">
+  <h2 class="index_h2">The are <span class="index_num_of_contacts"><%= @num_of_contacts %></span> contacts</h2>
+  <% Contact.all.each do |contact| %>
+    <p>
+      <a class="a1" href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %> (<%= contact.email %>)</a> <br />
+      <a class="a2" href="">Edit</a> <span class="index_span">|</span> <a class="a2" href="">Delete</a>
+    </p>
+  <% end %>
 </div>
-<footer class="contacts_footer">
+<footer class="index_footer">
   <p>
     &copy; Bitmaker 2016
   </p>
