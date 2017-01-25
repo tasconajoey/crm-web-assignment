@@ -10,11 +10,11 @@ get '/' do
 end
 
 get '/contacts' do
-  erb :contacts
+  erb :contacts, layout: false
 end
 
 get '/contacts/new' do
-  erb :new_contacts
+  erb :new_contacts, layout: false
 end
 
 post '/contacts' do
