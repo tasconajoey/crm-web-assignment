@@ -34,7 +34,7 @@ footer {
   max-width: 100%;
 }
 .index_footer {
-  margin-top: 218px;
+  margin-top: 334px;
 }
 footer p {
   color: #FAFAF4;
@@ -42,6 +42,7 @@ footer p {
   padding: 10px 0;
   font-weight: bold;
   font-family: sans-serif;
+  margin: 0;
 }
 .index_h2 {
   font-family: sans-serif;
@@ -70,4 +71,46 @@ footer p {
 }
 .index_div .index_span {
   font-size: 70%;
+}
+.contacts_h2 {
+  font-family: sans-serif;
+  max-width: 1200px;
+  padding: 15px;
+  background-color: #FF7860;
+  text-align: left;
+  margin: 20px auto;
+}
+.about_h2 {
+  font-family: sans-serif;
+  max-width: 1200px;
+  padding: 15px;
+  background-color: #FF7860;
+  text-align: left;
+  margin: 20px auto;
+}
+.about_div p {
+  font-family: sans-serif;
+  max-width: 1190px;
+  padding: 20px;
+  background-color: #00E9D3;
+  text-align: left;
+  margin: 20px auto;
+  font-size: 150%;
+  font-weight: bold;
+}
+.about_footer {
+  margin-top: 190px;
+}
+.contacts_form {
+  font-family: sans-serif;
+  max-width: 1190px;
+  padding: 20px;
+  background-color: #00E9D3;
+  text-align: left;
+  margin: 20px auto;
+  font-size: 150%;
+  font-weight: bold;
+}
+.contacts_footer {
+  margin-top: 218px;
 }
