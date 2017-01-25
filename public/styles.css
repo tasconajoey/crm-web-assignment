@@ -114,3 +114,7 @@ footer p {
 .new_contacts_div {
   min-height: 372px;
 }
+a.a1 {
+  text-decoration: none;
+  color: black;
+}

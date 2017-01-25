@@ -3,7 +3,7 @@
   <% Contact.all.each do |contact| %>
     <p>
       <a class="a1" href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %> (<%= contact.email %>)</a> <br />
-      <a class="a2" href="">Edit</a> <span class="index_span">|</span> <a class="a2" href="">Delete</a>
+      <a class="a2" href="/contacts/<%= contact.id %>/edit">Edit</a> <span class="index_span">|</span> <a class="a2" href="/contacts/<%= contact.id %>">Delete</a>
     </p>
   <% end %>
 </div>
