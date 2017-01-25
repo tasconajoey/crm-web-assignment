@@ -1,12 +1,14 @@
-<h1>Welcome to <%= @crm_app_name %>!</h1>
-<p>
-  Main menu
-</p>
-<ul>
-  <li>
-    <a href="/contacts">View all contacts</a>
-  </li>
-  <li>
-    <a href="/contacts/new">Add a new contact</a>
-  </li>
-</ul>
+<div class="index_div">
+  <h2 class="index_h2">The are <span class="index_num_of_contacts"><%= @num_of_contacts %></span> contacts</h2>
+  <% Contact.all.each do |contact| %>
+    <p>
+      <%= contact.first_name %> <%= contact.last_name %> (<%= contact.email %>) <br />
+      <a href="">Edit</a> <span class="index_span">|</span> <a href="">Delete</a>
+    </p>
+  <% end %>
+</div>
+<footer class="index_footer">
+  <p>
+    &copy; Bitmaker 2016
+  </p>
+</footer>

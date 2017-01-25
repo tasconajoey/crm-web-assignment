@@ -5,16 +5,16 @@ require 'sinatra'
 require_relative 'contact'
 
 get '/' do
-  @crm_app_name = "Joey's CRM"
+  @num_of_contacts = Contact.all.length
   erb :index
 end
 
 get '/contacts' do
-  erb :contacts, layout: false
+  erb :contacts
 end
 
-get '/contacts/new' do
-  erb :new_contacts, layout: false
+get '/about' do
+  erb :about
 end
 
 post '/contacts' do

@@ -1,8 +1,16 @@
-<h1>All Contacts</h1>
-<ul>
-<% Contact.all.each do |contact| %>
-  <li>
-    <%= contact.first_name %> <%= contact.last_name %>
-  </li>
-<% end %>
-</ul>
+<div>
+  <h2>Create new Contact</h1>
+
+  <form action='/contacts' method='post'>
+    <input type='text' name='first_name'>
+    <input type='text' name='last_name'>
+    <input type='email' name='email'>
+    <input type='text' name='note'>
+    <input type='submit' value='New Contact'>
+  </form>
+</div>
+<footer>
+  <p>
+    &copy; Bitmaker 2016
+  </p>
+</footer>

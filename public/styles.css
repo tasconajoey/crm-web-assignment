@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+header {
+
+}
+h1 {
+  background-color: #363636;
+  color: #F2E9D6;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 400%;
+}
+header p {
+  background-color: #D2D2D2;
+  text-align: center;
+  margin: 1px 0;
+}
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 200%;
+}
+li {
+  text-decoration: none;
+}
+footer {
+  background-color: #000000;
+  max-width: 100%;
+}
+.index_footer {
+  margin-top: 218px;
+}
+footer p {
+  color: #FAFAF4;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.index_h2 {
+  font-family: sans-serif;
+  max-width: 1200px;
+  padding: 15px;
+  background-color: #FF7860;
+  text-align: left;
+  margin: 20px auto;
+}
+.index_num_of_contacts {
+  font-weight: bold;
+  border-bottom: 5px solid #6FB7A0;
+}
+.index_div p {
+  font-family: sans-serif;
+  max-width: 1190px;
+  padding: 20px;
+  background-color: #00E9D3;
+  text-align: left;
+  margin: 20px auto;
+  font-size: 150%;
+  font-weight: bold;
+}
+.index_div a {
+  font-size: 70%;
+}
+.index_div .index_span {
+  font-size: 70%;
+}
