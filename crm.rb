@@ -4,6 +4,8 @@
 require 'sinatra'
 require_relative 'contact'
 
+Contact.create('Betty', 'Maker', 'betty@bitmakerlabs.com', 'Developer')
+
 get '/' do
   @num_of_contacts = Contact.all.length
   erb :index
@@ -20,4 +22,9 @@ end
 post '/contacts' do
   Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
   redirect to('/')
+end
+
+get '/contacts/1' do
+  @contact = Contact.find(1)
+  erb :show_contact
 end
