@@ -1,9 +1,6 @@
 body {
   margin: 0;
 }
-header {
-
-}
 h1 {
   background-color: #363636;
   color: #F2E9D6;
@@ -128,4 +125,10 @@ a.a1 {
   background-color: #FF7860;
   text-align: left;
   margin: 20px auto;
+}
+form.form1 {
+  text-align: center;
+}
+#show_contact_div {
+  min-height: 392px;
 }
