@@ -118,3 +118,14 @@ a.a1 {
   text-decoration: none;
   color: black;
 }
+.edit_contact_div {
+  min-height: 372px;
+}
+.edit_contact_h2 {
+  font-family: sans-serif;
+  max-width: 1200px;
+  padding: 15px;
+  background-color: #FF7860;
+  text-align: left;
+  margin: 20px auto;
+}
